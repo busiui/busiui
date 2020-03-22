@@ -35,13 +35,12 @@ export class BusiSquareComponent extends HTMLElement {
         updateStyle(this);
     }
 }
-
 customElements.define('custom-square', BusiSquareComponent);
 
 function updateStyle(elem:any) {
     const shadow = elem.shadowRoot;
     shadow.querySelector('style').textContent = `
-      div {
+      div { 
         width: ${elem.getAttribute('l')}px;
         height: ${elem.getAttribute('l')}px;
         background-color: ${elem.getAttribute('c')};
