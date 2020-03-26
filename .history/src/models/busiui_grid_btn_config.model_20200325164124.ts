@@ -1,0 +1,18 @@
+export interface BusiuiGridBtnConfigModel {
+    id: number,//                   NUMBER(19)                     not null,
+    func_id: number,//              number(19)                     null,
+    grid_code: string,//            VARCHAR2(50)                   null,
+    op_addr: string,//              VARCHAR2(4)                    null,
+    OP_ID: string,//                VARCHAR2(50)                   null,
+    op_name: string,//              VARCHAR2(50)                   null,
+    op_order: number,//             int                            null,
+    have_display: string,//         VARCHAR2(4)                    null,
+    if_display: string,//           VARCHAR2(100)                  null,
+    dynFlag: string,//              VARCHAR2(200)                  null,
+    NZTYPE: string,//               VARCHAR2(20)                   null,
+    have_icon: string,//            VARCHAR2(4)                    null,
+    CSS_CLASS: string,//            VARCHAR2(200)                  null,
+    POST_MONITOR: string,//         VARCHAR2(4)                    null,
+    EXE_ROLE: string,//             VARCHAR2(200)                  null,
+    EXE_EVENT: string,//            VARCHAR2(500)                  null,
+}
