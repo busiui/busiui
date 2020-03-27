@@ -28,7 +28,11 @@ export class BusiUiRadio extends BusiUiComponent {
             '</div>'
         ];
         this.$(shadow).find('div').html(html.join(''));
-        
+        shadow.querySelector('style').textContent = `
+        @import url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+        @import url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css');
+        @import url('./bootstrap-table.css');
+        `;
         //1.初始化Table
         let st = setTimeout(() => {
             const input = this.$(this.shadowRoot).find('input');
