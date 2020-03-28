@@ -71,10 +71,10 @@ export class BusiUiComponent extends HTMLElement {
         EventService.setNextParams(event, this.conf.ng_model)
     }
 
-    render(html: Array<string>, params: any) {
+    view(html: Array<string>, params: any) {
         const shadow = this.shadowRoot;
         const view = ToolsUtils.stringReplace(html.join(''), params);
         this.$(shadow).find('div').html(view);
-        return view;
+        return view
     }
 }

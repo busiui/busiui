@@ -11,7 +11,10 @@ export class BusiUiRadio extends BusiUiComponent {
      * 重载updateStyle
      */
     updateStyle() {
-        this.render(VIEW, this.conf);
+
+        const shadow = this.shadowRoot;
+        const html = this.view(VIEW, this.conf);
+        this.$(shadow).find('div').html(html);
 
         //1.初始化Table
         let st = setTimeout(() => {
