@@ -1,17 +1,16 @@
 
 import { BusiUiComponent } from '../busiui-component';
-import { VIEW } from './busiui-radio.view';
+import { VIEW } from './busiui-checkbox.view';
+export class BusiUiCheckBox extends BusiUiComponent {
 
-export class BusiUiRadio extends BusiUiComponent {
     constructor() {
         super();
     }
 
-    /**
-     * 重载updateStyle
-     */
+
     updateStyle() {
-        this.render(VIEW, this.conf);
+
+         this.view(VIEW, this.conf);
 
         //1.初始化Table
         let st = setTimeout(() => {
@@ -22,4 +21,4 @@ export class BusiUiRadio extends BusiUiComponent {
     };
 }
 
-customElements.define('busiui-radio', BusiUiRadio);
+customElements.define('busiui-checkbox', BusiUiCheckBox);

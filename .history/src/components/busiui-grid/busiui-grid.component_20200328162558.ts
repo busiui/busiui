@@ -112,7 +112,7 @@ export class BusiUiGrid extends BusiUiComponent {
         for (const key in this.selesctOpConfig) {
             selesctOp.push(this.genComponent(this.selesctOpConfig[key]));
         }
-        const html = this.render(VIEW, { select: selesctOp.join('') });
+        const html = this.view(VIEW, { select: selesctOp.join('') });
         // const html = [
         //     '<div class="panel-body" style="padding-bottom:0px;">',
         //     '<div style="margin-bottom:10px">',

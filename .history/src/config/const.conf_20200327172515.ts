@@ -4,4 +4,3 @@ export const PANNEL_KEY = 'pannel'; //全局变量pannel的key
 export const DTO_KEY = 'dto'; //全局变量dto的key
 export const VALUE_LOGIC_KEY = 'value_logic'; //全局动态取值逻辑key
 export const BUTTON_KEY = 'btn';//全局变量button的key
-export const SHOW_LOG = false;

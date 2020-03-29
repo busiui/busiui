@@ -1,12 +1,12 @@
 
 import { EventService } from '../services';
-import { BusiuiSelectOpConfigModel } from '../models'
+import { BusiuiSelectOpConfigModel} from '../models'
 import { ToolsUtils } from '../utils';
 
 export class BusiUiComponent extends HTMLElement {
     win: any = window; //公共部分
     $: any = this.win['$']; //jQuery 公共部分
-    conf: BusiuiSelectOpConfigModel; //组件配置 两种不同的结构 公共部分
+    conf: BusiuiSelectOpConfigModel ; //组件配置 两种不同的结构 公共部分
 
     constructor() {
         // Always call super first in constructor
@@ -57,7 +57,7 @@ export class BusiUiComponent extends HTMLElement {
     };
 
     //事件初始化 公共方法
-    Init(input: any) {
+    Init( input:any ) {
         const self = this;
         input.bind('input blur focus', (event: any) => self.onChange(event));
     }
@@ -71,10 +71,9 @@ export class BusiUiComponent extends HTMLElement {
         EventService.setNextParams(event, this.conf.ng_model)
     }
 
-    render(html: Array<string>, params: any) {
+    view(html: Array<string>,params:any) {
         const shadow = this.shadowRoot;
-        const view = ToolsUtils.stringReplace(html.join(''), params);
-        this.$(shadow).find('div').html(view);
-        return view;
+        ToolsUtils.stringReplace(html.join(''),params);
+        return this.$(shadow).find('div').html(html);
     }
 }

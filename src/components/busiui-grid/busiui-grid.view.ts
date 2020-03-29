@@ -14,7 +14,7 @@ export const VIEW = [
     '      <div class="panel-body">',
     '        <form id="formSearch" class="form-horizontal">',
     '          <div style="margin-top:15px">',
-                    
+    '${select}',              
     // ' <div class="col-md-4"><busiui-checkbox class="form-group" conf=\'{\"lable\":\"部门\",\"ngModel\":\"Name\"}\'></busiui-checkbox></div>',
     // '            <div class="col-md-4"><busiui-radio class="form-group" conf=\'{\"lable\":\"上级\",\"ngModel\":\"department\"}\'></busiui-radio></div>',
     // '            <div class="col-md-4"><busiui-select class="form-group" conf=\'{\"lable\":\"级别\",\"ngModel\":\"level\"}\'></busiui-select></div>',

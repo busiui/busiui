@@ -11,7 +11,7 @@ export class BusiUiRadio extends BusiUiComponent {
      * 重载updateStyle
      */
     updateStyle() {
-        this.render(VIEW, this.conf);
+        this.view(VIEW, this.conf);
 
         //1.初始化Table
         let st = setTimeout(() => {
