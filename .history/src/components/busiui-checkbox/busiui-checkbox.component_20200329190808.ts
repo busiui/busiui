@@ -19,7 +19,7 @@ export class BusiUiCheckBox extends BusiUiComponent {
             this.Init(input);
         }, 10)
 
-    }
+    };
 }
 
 customElements.define('busiui-checkbox', BusiUiCheckBox);

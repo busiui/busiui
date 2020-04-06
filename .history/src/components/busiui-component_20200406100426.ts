@@ -17,12 +17,9 @@ export class BusiUiComponent extends HTMLElement {
         shadow.appendChild(style); //公共部分
         shadow.appendChild(div); //公共部分
         const stringConf = this.getAttribute('conf'); //接收外部传入的conf //公共部分
-        
+        console.log(stringConf);
         if (stringConf) {
             this.conf = JSON.parse(stringConf); //解码 //公共部分
-        }else{
-            console.log('！error！conf not exsists! class:'+this.constructor.name,);
-            console.log(stringConf);
         }
         shadow.querySelector('style').textContent = `
         @import url('./assets/css/bootstrap3.min.css');
