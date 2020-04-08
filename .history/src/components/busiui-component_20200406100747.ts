@@ -21,7 +21,7 @@ export class BusiUiComponent extends HTMLElement {
         if (stringConf) {
             this.conf = JSON.parse(stringConf); //解码 //公共部分
         }else{
-            console.log('！error！conf not exsists! class:'+this.constructor.name,);
+            console.log('！error！conf not exsists! class:'+this.constructor.name+,);
             console.log(stringConf);
         }
         shadow.querySelector('style').textContent = `
