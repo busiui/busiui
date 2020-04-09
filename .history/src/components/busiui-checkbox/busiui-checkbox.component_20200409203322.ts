@@ -1,16 +1,16 @@
 
 import { BusiUiComponent } from '../busiui-component';
-const VIEW = require('./busiui-radio.view.html');
+import { VIEW } from './busiui-checkbox.view';
 
-export class BusiUiRadio extends BusiUiComponent {
+export class BusiUiCheckBox extends BusiUiComponent {
+
     constructor() {
         super();
     }
 
-    /**
-     * 重载updateStyle
-     */
+
     updateStyle() {
+        //渲染
         this.render(VIEW.default, this.conf);
 
         //1.初始化Table
@@ -19,7 +19,7 @@ export class BusiUiRadio extends BusiUiComponent {
             this.Init(input);
         }, 10)
 
-    };
+    }
 }
 
-customElements.define('busiui-radio', BusiUiRadio);
+customElements.define('busiui-checkbox', BusiUiCheckBox);

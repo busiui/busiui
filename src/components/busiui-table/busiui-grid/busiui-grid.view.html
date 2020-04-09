@@ -1,0 +1,1 @@
+<table id="tb_departments"></table>

@@ -28,16 +28,12 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.html$/,
-        use: 'raw-loader',
       }
     ],
 
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js','.html']
+    extensions: ['.tsx', '.ts', '.js']
   },
   output: {
     filename: 'busiui.js',

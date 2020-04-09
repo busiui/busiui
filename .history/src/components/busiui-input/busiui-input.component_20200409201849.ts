@@ -15,7 +15,7 @@ export class BusiUiInput extends BusiUiComponent {
             cssClass: this.conf['lable'] ? 'col-sm-8' : 'col-sm-12',
             isLableHide: this.conf['lable'] ? '' : 'hidden',
         }
-        const html = VIEW.default;
+        const html = [VIEW.default];
         this.render(html, params);
 
         //1.初始化Table

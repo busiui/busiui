@@ -1,6 +1,6 @@
+
 import { BusiUiComponent } from '../busiui-component';
-const VIEW = require('./busiui-input.view.html');
-console.log( VIEW );
+import VIEW from './busiui-input.view.html';
 export class BusiUiInput extends BusiUiComponent {
     constructor() {
         super();
@@ -15,8 +15,7 @@ export class BusiUiInput extends BusiUiComponent {
             cssClass: this.conf['lable'] ? 'col-sm-8' : 'col-sm-12',
             isLableHide: this.conf['lable'] ? '' : 'hidden',
         }
-        const html = VIEW.default;
-        this.render(html, params);
+        this.render(VIEW, params);
 
         //1.初始化Table
         let st = setTimeout(() => {

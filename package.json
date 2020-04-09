@@ -10,6 +10,8 @@
   "author": "busiUI-jarry",
   "license": "busiUI",
   "devDependencies": {
+    "raw-loader": "^4.0.0",
+    "text-loader": "0.0.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0",

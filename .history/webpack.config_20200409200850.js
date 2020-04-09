@@ -31,13 +31,13 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: 'raw-loader',
+        use: 'text-loader',
       }
     ],
 
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js','.html']
+    extensions: ['.tsx', '.ts', '.js']
   },
   output: {
     filename: 'busiui.js',

@@ -82,9 +82,9 @@ export class BusiUiComponent extends HTMLElement {
      * @param html 模板
      * @param params 
      */
-    render(html: string, params: any) {
+    render(html: Array<string>, params: any) {
         const shadow = this.shadowRoot;
-        const view = ToolsUtils.stringReplace(html, params);
+        const view = ToolsUtils.stringReplace(html.join(''), params);
         shadow.querySelector('div').innerHTML =  view;
         console.log(this.$(shadow).parent());
         return view;

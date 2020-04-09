@@ -108,7 +108,7 @@ export class BusiUiTableSelect extends BusiUiComponent {
         for (const key in this.selesctOpConfig) {
             selesctOp.push(this.genComponent(this.selesctOpConfig[key]));
         }
-        const html = this.render(VIEW.default, { select: selesctOp.join('') });
+        const html = this.render(VIEW, { select: selesctOp.join('') });
         this.$(shadow).find('div').html(html);
 
         //1.初始化Table

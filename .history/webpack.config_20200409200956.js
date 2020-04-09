@@ -37,7 +37,7 @@ module.exports = {
 
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js','.html']
+    extensions: ['.tsx', '.ts', '.js','html']
   },
   output: {
     filename: 'busiui.js',
