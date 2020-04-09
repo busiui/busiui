@@ -1,6 +1,6 @@
 import { BusiUiComponent } from '../busiui-component';
 const VIEW = require('./busiui-input.view.html');
-console.log( VIEW );
+
 export class BusiUiInput extends BusiUiComponent {
     constructor() {
         super();
