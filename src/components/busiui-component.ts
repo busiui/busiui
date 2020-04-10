@@ -7,6 +7,7 @@ export class BusiUiComponent extends HTMLElement {
     win: any = window; //公共部分
     $: any = this.win['$']; //jQuery 公共部分
     conf: any; //组件配置 两种不同的结构 公共部分
+    public static conf:any = {};
 
     constructor() {
         // Always call super first in constructor
@@ -65,7 +66,7 @@ export class BusiUiComponent extends HTMLElement {
     //事件初始化 公共方法
     Init(input: any) {
         const self = this;
-        input.bind('input blur focus', (event: any) => self.onChange(event));
+        input.bind('input blur focus click', (event: any) => self.onChange(event));
     }
 
     /**

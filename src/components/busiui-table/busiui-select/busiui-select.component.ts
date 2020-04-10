@@ -2,6 +2,7 @@ import { EventService } from '../../../services';
 import { BusiuiSelectOpConfigModel, BusiuiGridConfigModel, BusiuiGridBtnConfigModel, BusiuiiGridColConfig } from '../../../models'
 import { BusiUiComponent } from '../../busiui-component';
 const VIEW = require( './busiui-select.view.html');
+// import { BusiUiComponent } from './busiui-select.view.html';
 /**
  * 动态Grid
  */

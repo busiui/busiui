@@ -172,15 +172,18 @@ export class BusiUiTable extends BusiUiComponent {
     Init() {
         const _this = this;
         const $ = this.$;
-        $.ajax({
-            url: `/assets/json/${this.busiuiID}.json`, 
-            dataType:'json',
-            success: function (res:any) {
-                debugger
-                _this.conf = res;
-                _this.render(VIEW.default,{conf: JSON.stringify(res)});
-            }
-        });
+        if (!BusiUiComponent.conf[this.busiuiID]) {
+            $.ajax({
+                url: `/assets/json/${this.busiuiID}.json`,
+                dataType: 'json',
+                success: function (res: any) {
+                    debugger
+                    BusiUiComponent.conf[this.busiuiID] = res;
+
+                    _this.render(VIEW.default, { busiuiID: this.busiuiID });
+                }
+            });
+        }
         // const conf = {
         //     url: './mock/demo.json',         //请求后台的URL（*）
         //     method: 'get',                      //请求方式（*）
