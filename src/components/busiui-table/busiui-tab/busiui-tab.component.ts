@@ -25,89 +25,13 @@ export class BusiUiTableTab extends BusiUiComponent {
     constructor() {
         // Always call super first in constructor
         super();
-
-        // this.tabConfig = [
-        //     {
-        //         id: 1,
-        //         func_id: 1,//              number(19)                     null,
-        //         select_code: "select_code",//          VARCHAR2(50)                   null,
-        //         input_type: "2",//           VARCHAR2(4)                    null,
-        //         input_row: 1,//            int                            null,
-        //         input_column: 1,//         int                            null,
-        //         input_dict: "select_code",//           VARCHAR2(200)                  null,
-        //         input_grouptype: "select_code",//      VARCHAR2(4)                    null,
-        //         input_group: 1,//          int                            null,
-        //         input_group_unitnum: 2,//  int                            null,
-        //         ng_model: "2",//             VARCHAR2(50)                   null,
-        //         placeholder: "select_code",//          VARCHAR2(200)                  null,
-        //         where_and: "select_code",//            VARCHAR2(200)                  null,
-        //         default_value: "select_code",//        VARCHAR2(50)                   null,
-        //         have_display: "select_code",//         VARCHAR2(4)                    null,
-        //         if_display: "select_code",//           VARCHAR2(100)                  null,
-        //         lable: "tab1",//                VARCHAR2(200)                  null,
-        //     },
-        //     {
-        //         id: 1,
-        //         func_id: 1,//              number(19)                     null,
-        //         select_code: "select_code",//          VARCHAR2(50)                   null,
-        //         input_type: "13",//           VARCHAR2(4)                    null,
-        //         input_row: 1,//            int                            null,
-        //         input_column: 1,//         int                            null,
-        //         input_dict: "select_code",//           VARCHAR2(200)                  null,
-        //         input_grouptype: "select_code",//      VARCHAR2(4)                    null,
-        //         input_group: 1,//          int                            null,
-        //         input_group_unitnum: 2,//  int                            null,
-        //         ng_model: "13",//             VARCHAR2(50)                   null,
-        //         placeholder: "select_code",//          VARCHAR2(200)                  null,
-        //         where_and: "select_code",//            VARCHAR2(200)                  null,
-        //         default_value: "select_code",//        VARCHAR2(50)                   null,
-        //         have_display: "select_code",//         VARCHAR2(4)                    null,
-        //         if_display: "select_code",//           VARCHAR2(100)                  null,
-        //         lable: "test",//                VARCHAR2(200)                  null,
-        //     },
-        //     {
-        //         id: 1,
-        //         func_id: 1,//              number(19)                     null,
-        //         select_code: "select_code",//          VARCHAR2(50)                   null,
-        //         input_type: "12",//           VARCHAR2(4)                    null,
-        //         input_row: 1,//            int                            null,
-        //         input_column: 1,//         int                            null,
-        //         input_dict: "select_code",//           VARCHAR2(200)                  null,
-        //         input_grouptype: "select_code",//      VARCHAR2(4)                    null,
-        //         input_group: 1,//          int                            null,
-        //         input_group_unitnum: 2,//  int                            null,
-        //         ng_model: "12",//             VARCHAR2(50)                   null,
-        //         placeholder: "select_code",//          VARCHAR2(200)                  null,
-        //         where_and: "select_code",//            VARCHAR2(200)                  null,
-        //         default_value: "select_code",//        VARCHAR2(50)                   null,
-        //         have_display: "select_code",//         VARCHAR2(4)                    null,
-        //         if_display: "select_code",//           VARCHAR2(100)                  null,
-        //         lable: "test",//                VARCHAR2(200)                  null,
-        //     },
-        //     {
-        //         id: 1,
-        //         func_id: 1,//              number(19)                     null,
-        //         select_code: "select_code",//          VARCHAR2(50)                   null,
-        //         input_type: "11",//           VARCHAR2(4)                    null,
-        //         input_row: 1,//            int                            null,
-        //         input_column: 1,//         int                            null,
-        //         input_dict: "select_code",//           VARCHAR2(200)                  null,
-        //         input_grouptype: "select_code",//      VARCHAR2(4)                    null,
-        //         input_group: 1,//          int                            null,
-        //         input_group_unitnum: 2,//  int                            null,
-        //         ng_model: "11",//             VARCHAR2(50)                   null,
-        //         placeholder: "select_code",//          VARCHAR2(200)                  null,
-        //         where_and: "select_code",//            VARCHAR2(200)                  null,
-        //         default_value: "select_code",//        VARCHAR2(50)                   null,
-        //         have_display: "select_code",//         VARCHAR2(4)                    null,
-        //         if_display: "select_code",//           VARCHAR2(100)                  null,
-        //         lable: "test",//                VARCHAR2(200)                  null,
-        //     }
-        // ]
     }
 
 
     updateStyle() {
+        // 获取不到值，先写死
+        this.busiuiID = '14001';
+
         const shadow = this.shadowRoot;
         const tabs = [];
         let tabCode = '';
