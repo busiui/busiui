@@ -8,7 +8,6 @@ const VIEW = require('./busiui-tab.view.html');
  */
 export class BusiUiTableTab extends BusiUiComponent {
 
-    busiuiID:string;// 功能号
     table: any; //表格jquery对象
     selesctOpConfig: Array<BusiuiSelectOpConfigModel> = []; //查询区域配置
     eventService: EventService; //通知事件
@@ -30,8 +29,6 @@ export class BusiUiTableTab extends BusiUiComponent {
 
     updateStyle() {
         // 获取不到值，先写死
-        this.busiuiID = '14001';
-
         const shadow = this.shadowRoot;
         const tabs = [];
         let tabCode = '';

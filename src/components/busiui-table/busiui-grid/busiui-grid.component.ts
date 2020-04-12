@@ -9,7 +9,6 @@ export class BusiUiGrid extends BusiUiComponent {
 
 
     gridDataConf: any = {};
-    busiuiID: string;// 功能号
     tabCode: string;// tab号
     grid_code: string;// 表格号
     table: any; //表格jquery对象
@@ -51,7 +50,6 @@ export class BusiUiGrid extends BusiUiComponent {
     Init() {
         debugger
         // 获取不到值，先写死
-        this.busiuiID = '14001';
         this.tabCode = '[TAB][14001]-1';
         let bizConf = BusiUiComponent.conf[this.busiuiID];
         // 循环，获取表格数据

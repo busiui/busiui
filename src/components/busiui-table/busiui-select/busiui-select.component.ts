@@ -8,7 +8,6 @@ const VIEW = require( './busiui-select.view.html');
  */
 export class BusiUiTableSelect extends BusiUiComponent {
 
-    busiuiID:any;
     table: any; //表格jquery对象
     tabCode:any;
     rowColMap:any = {};//行列控件位置map，用于判断控件div的宽度
@@ -24,7 +23,6 @@ export class BusiUiTableSelect extends BusiUiComponent {
         // Always call super first in constructor
         super();
         // 获取不到值，先写死
-        this.busiuiID = '14001';
         this.tabCode = '[TAB][14001]-1';
         let bizConf = BusiUiComponent.conf[this.busiuiID];
         // console.log("===================================");

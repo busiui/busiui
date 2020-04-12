@@ -7,6 +7,7 @@ export class BusiUiComponent extends HTMLElement {
     win: any = window; //公共部分
     $: any = this.win['$']; //jQuery 公共部分
     conf: any; //组件配置 两种不同的结构 公共部分
+    busiuiID:string;
     public static conf:any = {};
 
     constructor() {
@@ -17,7 +18,8 @@ export class BusiUiComponent extends HTMLElement {
         const style = document.createElement('style'); //公共部分
         shadow.appendChild(style); //公共部分
         shadow.appendChild(div); //公共部分
-        const stringConf = this.getAttribute('conf'); //接收外部传入的conf //公共部分
+        const stringConf = this.getAttribute('conf'); //接收外部传入的 conf //公共部分
+        this.busiuiID = this.getAttribute('busiuiID'); //接收外部传入的 busiuiID //公共部分
         
         if (stringConf) {
             this.conf = JSON.parse(stringConf); //解码 //公共部分
