@@ -155,17 +155,16 @@ export class BusiUiTableSelect extends BusiUiComponent {
                 ret = `<div class="col-md-`+width+`"><busiui-select class="form-group" conf=\'${conf}\'></busiui-select></div>`;
                 break;
             case '7':
-                debugger
-                ret =`<div class="col-md-`+width+`"><busiui-datetimepicker class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
+                ret =`<div class="col-md-`+width+`"><busiui-datetimepicker dateformat ='YYYY-MM-DD' class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
                 break;
             case '8':
-                ret =`<div class="col-md-`+width+`"><busiui-datetimepicker class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
+                ret =`<div class="col-md-`+width+`"><busiui-datetimepicker dateformat ='YYYY-MM' class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
                 break;
             case '9':
-                ret =`<div class="col-md-`+width+`"><busiui-datetimepicker class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
+                ret =`<div class="col-md-`+width+`"><busiui-datetimepicker  dateformat ='YYYY-MM-DD' class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
                 break;
             case '10':
-                ret = `<div class="col-md-`+width+`"><busiui-datetimepicker class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
+                ret = `<div class="col-md-`+width+`"><busiui-datetimepicker  dateformat ='YYYY' class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
                 break;
             case '11':
                 ret = `<div class="col-md-`+width+`"><busiui-checkbox class="form-group" conf=\'${conf}\'></busiui-checkbox></div>`;

@@ -1,6 +1,10 @@
 
 import { BusiUiComponent } from '../busiui-component';
 export class BusiUiDatetimepicker extends BusiUiComponent {
+
+
+    dateformat: string;// 日期格式
+
     constructor() {
         super();
     }
@@ -9,6 +13,8 @@ export class BusiUiDatetimepicker extends BusiUiComponent {
      * 更新样式
      */
     updateStyle() {
+        debugger
+        this.dateformat = this.getAttribute('dateformat'); 
         const shadow = this.shadowRoot;
         const html = [
             '<div class="form-group row">',
@@ -26,7 +32,7 @@ export class BusiUiDatetimepicker extends BusiUiComponent {
         let st = setTimeout(() => {
             const textarea = this.$(this.shadowRoot).find('input');
             textarea.datetimepicker({
-                format: 'YYYY-MM-DD',  
+                format: this.dateformat,  
                 locale:'zh-CN'
             });
             this.Init(textarea);
