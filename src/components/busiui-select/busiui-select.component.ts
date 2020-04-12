@@ -1,5 +1,10 @@
 
 import { BusiUiComponent } from '../busiui-component';
+const VIEW = require('./busiui-select.view.html');
+
+/**
+ * 控件-下拉列表
+ */
 export class BusiUiSelect extends BusiUiComponent {
     constructor() {
         super();
@@ -9,20 +14,7 @@ export class BusiUiSelect extends BusiUiComponent {
      * 重新updateStyle
      */
     updateStyle() {
-        const shadow = this.shadowRoot;
-        const html = [
-            '<div class="form-group">',
-            // `<label for="exampleInputEmail1">${this.conf['lable']}</label>`,
-            '<select class="form-control">',
-            '<option>1</option>',
-            '<option>2</option>',
-            '<option>3</option>',
-            '<option>4</option>',
-            '<option>5</option>',
-            '</select>',
-            '</div>'
-        ];
-        this.$(shadow).find('div').html(html.join(''));
+        this.render(VIEW.default, this.conf);
         
         //1.初始化Table
         let st = setTimeout(() => {
