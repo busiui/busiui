@@ -155,6 +155,7 @@ export class BusiUiTableSelect extends BusiUiComponent {
                 ret = `<div class="col-md-`+width+`"><busiui-select class="form-group" conf=\'${conf}\'></busiui-select></div>`;
                 break;
             case '7':
+                debugger
                 ret =`<div class="col-md-`+width+`"><busiui-datetimepicker class="form-group" conf=\'${conf}\'></busiui-datetimepicker></div>`;
                 break;
             case '8':

@@ -27,7 +27,7 @@ export class BusiUiDatetimepicker extends BusiUiComponent {
             const textarea = this.$(this.shadowRoot).find('input');
             textarea.datetimepicker({
                 format: 'YYYY-MM-DD',  
-                language:'zh-CN'
+                locale:'zh-CN'
             });
             this.Init(textarea);
         }, 10)

@@ -10,6 +10,7 @@ export class BusiUiInputFloat extends BusiUiComponent {
      * 更新样式
      */
     updateStyle() {
+        debugger
         const params = {
             ...this.conf,
             cssClass: this.conf['lable'] ? 'col-sm-8' : 'col-sm-12',
