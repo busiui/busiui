@@ -31,7 +31,7 @@ export class BusiUiComponent extends HTMLElement {
         @import url('./assets/css/bootstrap.min.css');
         @import url('./assets/css/bootstrap-theme.min.css');
         @import url('./assets/css/bootstrap-table.css');
-        @import url('./assets/css/bootstrap-select.min.css');
+        @import url('./assets/css/bootstrap-datetimepicker.min.css');
         `;
         // this.eventService = new EventService();
         // this.conf = objConf;

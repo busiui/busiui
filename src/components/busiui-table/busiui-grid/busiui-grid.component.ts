@@ -31,6 +31,9 @@ export class BusiUiGrid extends BusiUiComponent {
 
 
     updateStyle() {
+
+        this.tabCode = this.getAttribute('tabCode'); //接收外部传入的 busiuiID //公共部分
+
         const shadow = this.shadowRoot;
         const selesctOp = [];
         for (const key in this.selesctOpConfig) {
@@ -149,21 +152,7 @@ export class BusiUiGrid extends BusiUiComponent {
             showToggle: true,                    //是否显示详细视图和列表视图的切换按钮
             cardView: false,                    //是否显示详细视图
             detailView: false,                   //是否显示父子表
-            columns: [{
-                checkbox: true
-            }, {
-                field: 'Name',
-                title: '部门名称'
-            }, {
-                field: 'ParentName',
-                title: '上级部门'
-            }, {
-                field: 'Level',
-                title: '部门级别'
-            }, {
-                field: 'Desc',
-                title: '描述'
-            },]
+            columns: []
         };
 
         conf = {

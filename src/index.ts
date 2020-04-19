@@ -1,5 +1,6 @@
 export * from './components/busi-square/busi-square.component';
 export * from './components/busiui-input/busiui-input.component';
+export * from './components/busiui-datetimepicker/busiui-datetimepicker.component';
 export * from './components/busiui-input/busiui-input-pwd.component';
 export * from './components/busiui-input/busiui-input-float.component';
 export * from './components/busiui-input/busiui-input-int.component';
