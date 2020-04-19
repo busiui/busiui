@@ -14,12 +14,30 @@ export class BusiUiSelect extends BusiUiComponent {
      * 重新updateStyle
      */
     updateStyle() {
+        const _this = this;
+        const $shadowRoot = this.$(this.shadowRoot);
         this.render(VIEW.default, this.conf);
+        let clickNum = 0;
         
         //1.初始化Table
         let st = setTimeout(() => {
-            const input = this.$(this.shadowRoot).find('select');
-            this.Init(input);
+            const input = $shadowRoot.find('select');
+            // this.Init(input);
+            // this.$(this.shadowRoot).find('.dropdown-toggle').dropdown('toggle');
+            $shadowRoot.find('.selectpicker').selectpicker('show');
+            const main = $shadowRoot.find('.bootstrap-select');
+            $shadowRoot.find('.btn').bind('click',function(){
+                main.toggleClass('open');
+                if( clickNum===0){
+                    $shadowRoot.find('ul.dropdown-menu li').bind('click',function(event:any){
+                        console.log(2222);
+                        _this.onChange(event);
+                        main.removeClass('open');
+                    });
+                }
+                clickNum++;
+            });
+            
         }, 10)
 
     };

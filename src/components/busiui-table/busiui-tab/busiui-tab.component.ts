@@ -30,6 +30,7 @@ export class BusiUiTableTab extends BusiUiComponent {
     updateStyle() {
         // 获取不到值，先写死
         const shadow = this.shadowRoot;
+        console.log('$1', shadow);
         const tabs = [];
         let tabCode = '';
         for (const key in BusiUiComponent.conf[this.busiuiID].BusuiTabConfigModel) {
@@ -37,14 +38,14 @@ export class BusiUiTableTab extends BusiUiComponent {
             let className = '';
             if ((this.currentKey && this.currentKey === tab.tab_code) || (!this.currentKey && (parseInt(key) === 0))){
                 className = 'active';
-                tabCode = this.currentKey;
+                tabCode = tab.tab_code;
             }else {
 
             }
             tabs.push('<li class="' + className + '"><a key="' + tab.tab_code + '">' + tab.tab_name + '</a></li>');
             // selesctOp.push(this.genComponent(this.selesctOpConfig[key]));
         }
-        
+        console.log( this.currentKey)
         const html = this.render(VIEW.default, { tabs: tabs.join(''),tabCode,busiuiID:this.busiuiID});
         // this.$(shadow).find('div').html(html);
         let st = setTimeout(() => {

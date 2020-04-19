@@ -185,6 +185,7 @@ export class BusiUiGrid extends BusiUiComponent {
             for (const key in event) {
                 this.queryDTO[key] = event[key].target.value;
             }
+            console.log( this.queryDTO );
         })
     }
 

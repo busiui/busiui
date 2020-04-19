@@ -28,9 +28,10 @@ export class BusiUiComponent extends HTMLElement {
             console.log(stringConf);
         }
         shadow.querySelector('style').textContent = `
-        @import url('./assets/css/bootstrap3.min.css');
+        @import url('./assets/css/bootstrap.min.css');
         @import url('./assets/css/bootstrap-theme.min.css');
         @import url('./assets/css/bootstrap-table.css');
+        @import url('./assets/css/bootstrap-select.min.css');
         `;
         // this.eventService = new EventService();
         // this.conf = objConf;
@@ -89,7 +90,16 @@ export class BusiUiComponent extends HTMLElement {
         const shadow = this.shadowRoot;
         const view = ToolsUtils.stringReplace(html, params);
         shadow.querySelector('div').innerHTML =  view;
-        console.log(this.$(shadow).parent());
+        
         return view;
+
+         // const shadow = this.shadowRoot;
+        //  const view = ToolsUtils.stringReplace(html, params);
+        //  // shadow.querySelector('div').innerHTML =  view;
+        //  const div = document.createElement('div'); //公共部分
+        //  div.innerHTML =  view
+        //  this.appendChild(div);
+        //  // console.log();
+        //  return view;
     }
 }
