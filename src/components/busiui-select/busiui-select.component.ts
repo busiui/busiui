@@ -21,7 +21,7 @@ export class BusiUiSelect extends BusiUiComponent {
         
         //1.初始化Table
         let st = setTimeout(() => {
-            const input = $shadowRoot.find('select');
+            // const input = $shadowRoot.find('select');
             // this.Init(input);
             // this.$(this.shadowRoot).find('.dropdown-toggle').dropdown('toggle');
             $shadowRoot.find('.selectpicker').selectpicker('show');
@@ -30,7 +30,6 @@ export class BusiUiSelect extends BusiUiComponent {
                 main.toggleClass('open');
                 if( clickNum===0){
                     $shadowRoot.find('ul.dropdown-menu li').bind('click',function(event:any){
-                        console.log(2222);
                         _this.onChange(event);
                         main.removeClass('open');
                     });
